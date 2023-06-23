@@ -20,6 +20,12 @@ public class AddSpeedOnTouch : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //velocity = (transform.position - prevPos) / Time.deltaTime;
+        //prevPos = transform.position;
+    }
+
+    private void FixedUpdate()
+    {
         velocity = (transform.position - prevPos) / Time.deltaTime;
         prevPos = transform.position;
     }
