@@ -46527,6 +46527,7 @@ GameObject:
   - component: {fileID: 1461655925}
   - component: {fileID: 1461655928}
   - component: {fileID: 1461655926}
+  - component: {fileID: 1461655929}
   m_Layer: 0
   m_Name: BoostCollider
   m_TagString: Untagged
@@ -46570,6 +46571,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1461655924}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1461655929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1461655924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fd821670bd36d74fbee5a65b5a3ab93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boostSpeed: 15
 --- !u!114 &1461785156 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6006819079442744599, guid: bf3a3ccb43bfce44dae19063b39bbef9,
