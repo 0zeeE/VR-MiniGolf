@@ -24,7 +24,7 @@ public class Booster : MonoBehaviour
     {
         if(other.tag == "Ball")
         {
-            other.attachedRigidbody.AddForce(other.transform.forward * boostSpeed);
+            other.attachedRigidbody.AddForce(this.gameObject.transform.forward * boostSpeed);
         }
     }
 }
