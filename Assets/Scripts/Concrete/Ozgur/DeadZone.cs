@@ -6,15 +6,16 @@ public class DeadZone : MonoBehaviour
 {
     [SerializeField] private GameManager gameManager;
     // Start is called before the first frame update
-    void Start()
+    
+    IEnumerator ReplaceBallWithDelay()
     {
-        
-    }
+        Debug.Log("Enum Triggered");
 
-    // Update is called once per frame
-    void Update()
-    {
+        yield return new WaitForSeconds(3);
+
+        gameManager.ReplaceBall();
         
+
     }
 
     private void OnTriggerEnter(Collider other)
@@ -22,7 +23,7 @@ public class DeadZone : MonoBehaviour
       if(other.tag == "Ball")
         {
             Debug.Log("Entered Dead Zone");
-            gameManager.ReplaceBall();
+           StartCoroutine(ReplaceBallWithDelay());
         }
     }
 }
