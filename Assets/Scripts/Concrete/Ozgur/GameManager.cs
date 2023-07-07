@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     private int currentHoleNumber = 0;
     public List<Transform> startingPositions;
     public Rigidbody ballRigidbody;
+    public GameObject Ball;
 
     public int currentHitNumber = 0;
     private List<int> previousHitNumbers = new List<int>();
@@ -29,6 +30,7 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         DisplayScoreToTMP();
+        SwitchOtherHoleDebug();
     }
 
     public void GoToNextHole()
@@ -38,6 +40,8 @@ public class GameManager : MonoBehaviour
         if(currentHoleNumber >= startingPositions.Count)
         {
             Debug.Log("sona varildi");
+            Ball.GetComponent<GolfBall>().DestroyWithParticleEffect();
+
         }
         else
         {
@@ -75,6 +79,14 @@ public class GameManager : MonoBehaviour
         ballRigidbody.transform.position = startingPositions[currentHoleNumber].position;
         ballRigidbody.velocity = Vector3.zero;
         ballRigidbody.angularVelocity = Vector3.zero;
+    }
+
+    public void SwitchOtherHoleDebug()
+    {
+        if(Input.GetKeyDown(KeyCode.W))
+        {
+            GoToNextHole();
+        }
     }
 
 }

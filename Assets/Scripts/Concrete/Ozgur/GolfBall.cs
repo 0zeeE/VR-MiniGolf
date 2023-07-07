@@ -6,6 +6,7 @@ public class GolfBall : MonoBehaviour
 {
     [SerializeField] private AudioSource hitSound;
     [SerializeField] private AudioSource popSound;
+    [SerializeField] private float flyAmount = 10f;
 
     // Start is called before the first frame update
     public void PlayHitSound()
@@ -20,6 +21,15 @@ public class GolfBall : MonoBehaviour
 
     public void DestroyWithParticleEffect()
     {
-        Debug.Log("Eklenecek");
+        StartCoroutine(DestroySequence());
+
+    }
+
+    private IEnumerator DestroySequence()
+    {
+        this.gameObject.GetComponent<Rigidbody>().AddForce(Vector3.up * flyAmount);
+        yield return new WaitForSeconds(1);
+        Destroy(this.gameObject);
+        //Konfetti kodunu yaz
     }
 }

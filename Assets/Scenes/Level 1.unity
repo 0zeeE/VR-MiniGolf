@@ -16920,6 +16920,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 581108504}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &583124535 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8560111786352583972, guid: cbbbca6be8803fc43bc8b2fc8fffe4a5,
+    type: 3}
+  m_PrefabInstance: {fileID: 8794062778543629132}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &586028416
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33429,6 +33435,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5059214527468572919, guid: 3f1827e1495245348a67274dd2a1a6b5,
+        type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 419389513}
     - target: {fileID: 5401110213332176314, guid: 3f1827e1495245348a67274dd2a1a6b5,
         type: 3}
       propertyPath: m_Name
@@ -69395,6 +69406,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4445698080498940786, guid: f7f6cdac965872141ba1823101dec319,
         type: 3}
+      propertyPath: Ball
+      value: 
+      objectReference: {fileID: 583124535}
+    - target: {fileID: 4445698080498940786, guid: f7f6cdac965872141ba1823101dec319,
+        type: 3}
       propertyPath: holeText
       value: 
       objectReference: {fileID: 1461785156}
@@ -69650,6 +69666,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GolfBall(Blue)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8810545900610613166, guid: cbbbca6be8803fc43bc8b2fc8fffe4a5,
+        type: 3}
+      propertyPath: flyAmount
+      value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 9043352281233129374, guid: cbbbca6be8803fc43bc8b2fc8fffe4a5,
         type: 3}
