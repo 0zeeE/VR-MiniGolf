@@ -41,8 +41,9 @@ public class GolfBall : MonoBehaviour
         this.gameObject.GetComponent<Rigidbody>().AddForce(Vector3.up * flyAmount);
         yield return new WaitForSeconds(1);
         Instantiate(confettiParticle, this.gameObject.transform);
-        //this.gameObject.GetComponent<MeshRenderer>().
-        yield return new WaitForSeconds(1);
+        this.gameObject.GetComponent<MeshRenderer>().enabled = false;
+        this.gameObject.GetComponent<TrailRenderer>().enabled = false;
+        
         
     }
 
