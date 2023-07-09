@@ -44,6 +44,7 @@ public class AddSpeedOnTouch : MonoBehaviour
 
             Rigidbody rb = other.attachedRigidbody;
             rb.velocity = projectedVelocity;
+            other.GetComponent<GolfBall>().PlayHitSound(); //Test edilmedi. Hataya sebep verebilir.
 
             gameManager.currentHitNumber++;
         }
