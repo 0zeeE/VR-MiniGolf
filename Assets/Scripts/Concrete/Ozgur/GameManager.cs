@@ -61,7 +61,7 @@ public class GameManager : MonoBehaviour
     {
         for (int i = 0; i < previousHitNumbers.Count; i++)
         {
-            Debug.Log("HOLE " + (i + 1) + "-" + previousHitNumbers[i]);
+            Debug.Log("Delik " + (i + 1) + "-" + previousHitNumbers[i]);
         }
     }
 

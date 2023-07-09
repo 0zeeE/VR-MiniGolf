@@ -6,7 +6,7 @@ public class GolfBall : MonoBehaviour
 {
     [SerializeField] private AudioSource hitSound;
     [SerializeField] private AudioSource popSound;
-    [SerializeField] private float flyAmount = 10f;
+    [SerializeField] private float flyAmount = 200f;
     [SerializeField] private GameObject confettiParticle;
     [SerializeField] private Vector3 ballPos;
     [SerializeField] private Quaternion ballQuaternion;

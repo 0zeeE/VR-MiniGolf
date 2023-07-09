@@ -240,6 +240,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hitSound: {fileID: 569676706719216495}
   popSound: {fileID: 4685329507724603967}
+  flyAmount: 10
+  confettiParticle: {fileID: 2796922126341807554, guid: 1a50ddabc25dd634aa7967ae9c0022a5,
+    type: 3}
+  ballPos: {x: 0, y: 0, z: 0}
+  ballQuaternion: {x: 0, y: 0, z: 0, w: 0}
 --- !u!82 &569676706719216495
 AudioSource:
   m_ObjectHideFlags: 0
