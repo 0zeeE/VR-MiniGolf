@@ -79,7 +79,6 @@ public class GameManager : MonoBehaviour
         ballRigidbody.transform.position = startingPositions[currentHoleNumber].position;
         ballRigidbody.velocity = Vector3.zero;
         ballRigidbody.angularVelocity = Vector3.zero;
-        Ball.GetComponent<GolfBall>().PlayPopSound(); //Test edilmedi. Hataya sebep verebilir.
     }
 
     public void SwitchOtherHoleDebug()
@@ -89,7 +88,5 @@ public class GameManager : MonoBehaviour
             GoToNextHole();
         }
     }
-
-    //SceneManagement Kismi buraya gelecek
 
 }
