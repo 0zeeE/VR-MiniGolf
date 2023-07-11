@@ -24981,7 +24981,6 @@ GameObject:
   - component: {fileID: 833255152}
   - component: {fileID: 833255151}
   - component: {fileID: 833255150}
-  - component: {fileID: 833255149}
   m_Layer: 5
   m_Name: EndingCanvas
   m_TagString: Untagged
@@ -24989,36 +24988,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &833255149
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 833255148}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9df45cd78abc644485446e74871725f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  head: {fileID: 310560786878325592}
-  spawnDistance: 2
-  menu: {fileID: 833255148}
-  showButton:
-    m_UseReference: 1
-    m_Action:
-      m_Name: Show Button
-      m_Type: 0
-      m_ExpectedControlType: 
-      m_Id: fe453f14-88d2-42fa-b8d2-d4ceaa8ce98b
-      m_Processors: 
-      m_Interactions: 
-      m_SingletonActionBindings: []
-      m_Flags: 0
-    m_Reference: {fileID: -6395602842196007441, guid: c348712bda248c246b8c49b3db54643f,
-      type: 3}
-  leftHandRay: {fileID: 0}
-  rightHandRay: {fileID: 0}
 --- !u!114 &833255150
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -68777,9 +68746,39 @@ PrefabInstance:
       objectReference: {fileID: 1461785156}
     - target: {fileID: 4445698080498940786, guid: f7f6cdac965872141ba1823101dec319,
         type: 3}
+      propertyPath: endCanvas
+      value: 
+      objectReference: {fileID: 833255148}
+    - target: {fileID: 4445698080498940786, guid: f7f6cdac965872141ba1823101dec319,
+        type: 3}
+      propertyPath: leftXRray
+      value: 
+      objectReference: {fileID: 1299677861}
+    - target: {fileID: 4445698080498940786, guid: f7f6cdac965872141ba1823101dec319,
+        type: 3}
+      propertyPath: leftXrRay
+      value: 
+      objectReference: {fileID: 1299677861}
+    - target: {fileID: 4445698080498940786, guid: f7f6cdac965872141ba1823101dec319,
+        type: 3}
+      propertyPath: rightXRray
+      value: 
+      objectReference: {fileID: 45877176}
+    - target: {fileID: 4445698080498940786, guid: f7f6cdac965872141ba1823101dec319,
+        type: 3}
+      propertyPath: rightXrRay
+      value: 
+      objectReference: {fileID: 45877176}
+    - target: {fileID: 4445698080498940786, guid: f7f6cdac965872141ba1823101dec319,
+        type: 3}
       propertyPath: ballRigidbody
       value: 
       objectReference: {fileID: 481360700}
+    - target: {fileID: 4445698080498940786, guid: f7f6cdac965872141ba1823101dec319,
+        type: 3}
+      propertyPath: headTransform
+      value: 
+      objectReference: {fileID: 310560786878325592}
     - target: {fileID: 4445698080498940786, guid: f7f6cdac965872141ba1823101dec319,
         type: 3}
       propertyPath: hitNumberTest

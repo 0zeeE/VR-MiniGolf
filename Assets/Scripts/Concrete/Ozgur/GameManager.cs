@@ -19,6 +19,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject endCanvas;
     [SerializeField] private Transform headTransform;
     [SerializeField] private float spawnDistance = 2f;
+    [SerializeField] private GameObject leftXrRay;
+    [SerializeField] private GameObject rightXrRay;
     
 
     void Start()
@@ -44,6 +46,7 @@ public class GameManager : MonoBehaviour
         {
             Debug.Log("sona varildi");
             Ball.GetComponent<GolfBall>().DestroyWithParticleEffect();
+            Invoke("ActivateEndingCanvas", 3f);
 
         }
         else
@@ -99,6 +102,7 @@ public class GameManager : MonoBehaviour
 
         endCanvas.transform.LookAt(new Vector3(headTransform.position.x, endCanvas.transform.position.y, headTransform.position.z));
         endCanvas.transform.forward *= -1;
+        //Elleri setactive edecek scripti yaz
         
     }
 
