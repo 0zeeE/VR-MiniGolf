@@ -3769,8 +3769,10 @@ MonoBehaviour:
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
-    m_Reference: {fileID: -6395602842196007441, guid: c348712bda248c246b8c49b3db54643f,
+    m_Reference: {fileID: -8208480048769516591, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
+  leftHandRay: {fileID: 2302519653929445406}
+  rightHandRay: {fileID: 2302519653929445405}
 --- !u!1 &1176566701
 GameObject:
   m_ObjectHideFlags: 0
@@ -7303,6 +7305,18 @@ PrefabInstance:
       objectReference: {fileID: 1176566702}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e60c0115a4803e44db4fd8743a58f8b7, type: 3}
+--- !u!1 &2302519653929445405 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2302519654635849712, guid: e60c0115a4803e44db4fd8743a58f8b7,
+    type: 3}
+  m_PrefabInstance: {fileID: 2302519653929445404}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2302519653929445406 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2302519654067238102, guid: e60c0115a4803e44db4fd8743a58f8b7,
+    type: 3}
+  m_PrefabInstance: {fileID: 2302519653929445404}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4925275326496072538
 PrefabInstance:
   m_ObjectHideFlags: 0

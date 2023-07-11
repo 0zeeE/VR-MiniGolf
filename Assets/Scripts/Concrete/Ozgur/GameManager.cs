@@ -16,6 +16,9 @@ public class GameManager : MonoBehaviour
 
     public TextMeshProUGUI holeText;
     public TextMeshProUGUI hitNumberTest;
+    [SerializeField] private GameObject endCanvas;
+    [SerializeField] private Transform headTransform;
+    [SerializeField] private float spawnDistance = 2f;
     
 
     void Start()
@@ -87,6 +90,16 @@ public class GameManager : MonoBehaviour
         {
             GoToNextHole();
         }
+    }
+
+    public void ActivateEndingCanvas()
+    {
+        endCanvas.SetActive(true);
+        endCanvas.transform.position = headTransform.position + new Vector3(headTransform.forward.x, 0, headTransform.forward.z).normalized * spawnDistance;
+
+        endCanvas.transform.LookAt(new Vector3(headTransform.position.x, endCanvas.transform.position.y, headTransform.position.z));
+        endCanvas.transform.forward *= -1;
+        
     }
 
 }
