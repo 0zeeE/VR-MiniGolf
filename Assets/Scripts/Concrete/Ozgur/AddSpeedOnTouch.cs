@@ -38,9 +38,8 @@ public class AddSpeedOnTouch : MonoBehaviour
 
             Vector3 collisionPos = clubCollider.ClosestPoint(other.transform.position);
             Vector3 collisionNorm = other.transform.position - collisionPos;
-            
-
             Vector3 projectedVelocity = Vector3.Project(velocity, collisionNorm);
+            other.GetComponent<GolfBall>().PlayHitSound();
 
             Rigidbody rb = other.attachedRigidbody;
             rb.velocity = projectedVelocity;

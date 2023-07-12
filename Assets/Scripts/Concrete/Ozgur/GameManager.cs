@@ -85,6 +85,7 @@ public class GameManager : MonoBehaviour
         ballRigidbody.transform.position = startingPositions[currentHoleNumber].position;
         ballRigidbody.velocity = Vector3.zero;
         ballRigidbody.angularVelocity = Vector3.zero;
+        Ball.GetComponent<GolfBall>().PlayPopSound();
     }
 
     public void SwitchOtherHoleDebug()
@@ -103,6 +104,8 @@ public class GameManager : MonoBehaviour
         endCanvas.transform.LookAt(new Vector3(headTransform.position.x, endCanvas.transform.position.y, headTransform.position.z));
         endCanvas.transform.forward *= -1;
         //Elleri setactive edecek scripti yaz
+        leftXrRay.SetActive(true);
+        rightXrRay.SetActive(true);
         
     }
 

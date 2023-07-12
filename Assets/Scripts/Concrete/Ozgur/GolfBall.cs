@@ -37,19 +37,18 @@ public class GolfBall : MonoBehaviour
 
     private IEnumerator DestroySequence()
     {
-        //bitmedi
+        
         this.gameObject.GetComponent<Rigidbody>().AddForce(Vector3.up * flyAmount);
         yield return new WaitForSeconds(1);
         Instantiate(confettiParticle, this.gameObject.transform);
         this.gameObject.GetComponent<MeshRenderer>().enabled = false;
         this.gameObject.GetComponent<TrailRenderer>().enabled = false;
-        
-        
-    }
-
-
-    private void AA()
-    {
+        yield return new WaitForSeconds(6);
         Destroy(this.gameObject);
+        
+        
     }
+
+
+    
 }
