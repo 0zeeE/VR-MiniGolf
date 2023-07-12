@@ -240,7 +240,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hitSound: {fileID: 569676706719216495}
   popSound: {fileID: 4685329507724603967}
-  flyAmount: 10
+  flyAmount: 1000
   confettiParticle: {fileID: 2796922126341807554, guid: 1a50ddabc25dd634aa7967ae9c0022a5,
     type: 3}
   ballPos: {x: 0, y: 0, z: 0}
@@ -353,7 +353,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: c60eb1d44629d6c40bc89150a1963a08, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.672
   m_Pitch: 1
   Loop: 0
   Mute: 0

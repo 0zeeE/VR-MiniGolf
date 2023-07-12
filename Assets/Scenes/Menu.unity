@@ -69003,21 +69003,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2302519655077727044
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2302519655077727069}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af6bf904e410ee8479f9093d8830d1f8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_LocomotionProvider: {fileID: 0}
-  m_MinHeight: 0
-  m_MaxHeight: Infinity
 --- !u!114 &2302519655077727067
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69058,7 +69043,6 @@ GameObject:
   - component: {fileID: 2302519655077727071}
   - component: {fileID: 2302519655077727068}
   - component: {fileID: 2302519655077727067}
-  - component: {fileID: 2302519655077727044}
   m_Layer: 6
   m_Name: XR Origin
   m_TagString: Untagged
@@ -70853,22 +70837,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: GolfBall(Blue)
       objectReference: {fileID: 0}
-    - target: {fileID: 8810545900610613166, guid: cbbbca6be8803fc43bc8b2fc8fffe4a5,
-        type: 3}
-      propertyPath: flyAmount
-      value: 1000
-      objectReference: {fileID: 0}
-    - target: {fileID: 8810545900610613166, guid: cbbbca6be8803fc43bc8b2fc8fffe4a5,
-        type: 3}
-      propertyPath: emptyTransform
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8810545900610613166, guid: cbbbca6be8803fc43bc8b2fc8fffe4a5,
-        type: 3}
-      propertyPath: confettiParticle
-      value: 
-      objectReference: {fileID: 2796922126341807554, guid: 1a50ddabc25dd634aa7967ae9c0022a5,
-        type: 3}
     - target: {fileID: 9043352281233129374, guid: cbbbca6be8803fc43bc8b2fc8fffe4a5,
         type: 3}
       propertyPath: m_RootOrder
