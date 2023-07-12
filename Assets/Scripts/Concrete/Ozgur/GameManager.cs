@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using System;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -21,6 +22,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private float spawnDistance = 2f;
     [SerializeField] private GameObject leftXrRay;
     [SerializeField] private GameObject rightXrRay;
+    [SerializeField] private GameObject leftGolfStick;
+    [SerializeField] private GameObject rightGolfStick;
     
 
     void Start()
@@ -60,10 +63,10 @@ public class GameManager : MonoBehaviour
         previousHitNumbers.Add(currentHitNumber);
         currentHitNumber = 0;
 
-        DisplayScore();
+        DisplayScoreDebug();
     }
 
-    public void DisplayScore()
+    public void DisplayScoreDebug()
     {
         for (int i = 0; i < previousHitNumbers.Count; i++)
         {
@@ -75,8 +78,8 @@ public class GameManager : MonoBehaviour
     {
         for(int i =0; i < previousHitNumbers.Count; i++)
         {
-            holeText.text = "HOLE " + (i + 1);
-            hitNumberTest.text = "Hit amount : " + previousHitNumbers[i];
+            holeText.text = "Delik:\n" + (i + 1);
+            hitNumberTest.text = "Vuruþ Sayýsý:\n" + previousHitNumbers[i];
         }
     }
 
@@ -103,10 +106,38 @@ public class GameManager : MonoBehaviour
 
         endCanvas.transform.LookAt(new Vector3(headTransform.position.x, endCanvas.transform.position.y, headTransform.position.z));
         endCanvas.transform.forward *= -1;
-        //Elleri setactive edecek scripti yaz
         leftXrRay.SetActive(true);
         rightXrRay.SetActive(true);
         
     }
+
+    public void SwitchGolfSticks()
+    {
+        if(rightGolfStick.activeInHierarchy == true)
+        {
+            rightGolfStick.SetActive(false);
+            leftGolfStick.SetActive(true);
+
+        }
+        else
+        {
+            leftGolfStick.SetActive(false);
+            rightGolfStick.SetActive(true);
+        }
+    }
+
+    //SCENEMANAGEMENT KISMI
+
+    public void ReturnTheMenu()
+    {
+        SceneManager.LoadScene("Menu");
+    }
+
+    public void RestartGame()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+   
 
 }

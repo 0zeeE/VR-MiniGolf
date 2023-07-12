@@ -11,6 +11,7 @@ public class GameMenuManager : MonoBehaviour
     public InputActionProperty showButton;
     public GameObject leftHandRay;
     public GameObject rightHandRay;
+    
 
     // Start is called before the first frame update
     void Start()
