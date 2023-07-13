@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.112620145, g: 0.28149727, b: 0.70918953, a: 1}
+  m_IndirectSpecularColor: {r: 0.11267907, g: 0.2815429, b: 0.7091803, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -67451,11 +67451,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 419389513}
-    - target: {fileID: 1159326912643395509, guid: 073c04a729e528a43841bee264893e75,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
+    - target: {fileID: 499861432, guid: 073c04a729e528a43841bee264893e75, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 419389513}
     - target: {fileID: 1159326912654794240, guid: 073c04a729e528a43841bee264893e75,
         type: 3}
       propertyPath: m_Name
@@ -68217,22 +68216,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: GolfBall(Blue)
       objectReference: {fileID: 0}
-    - target: {fileID: 8810545900610613166, guid: cbbbca6be8803fc43bc8b2fc8fffe4a5,
-        type: 3}
-      propertyPath: flyAmount
-      value: 1000
-      objectReference: {fileID: 0}
-    - target: {fileID: 8810545900610613166, guid: cbbbca6be8803fc43bc8b2fc8fffe4a5,
-        type: 3}
-      propertyPath: emptyTransform
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8810545900610613166, guid: cbbbca6be8803fc43bc8b2fc8fffe4a5,
-        type: 3}
-      propertyPath: confettiParticle
-      value: 
-      objectReference: {fileID: 2796922126341807554, guid: 1a50ddabc25dd634aa7967ae9c0022a5,
-        type: 3}
     - target: {fileID: 9043352281233129374, guid: cbbbca6be8803fc43bc8b2fc8fffe4a5,
         type: 3}
       propertyPath: m_RootOrder

@@ -49,13 +49,14 @@ public class GameManager : MonoBehaviour
         {
             Debug.Log("sona varildi");
             Ball.GetComponent<GolfBall>().DestroyWithParticleEffect();
+            Ball.GetComponent<GolfBall>().PlayWinSound();
             Invoke("ActivateEndingCanvas", 3f);
 
         }
         else
         {
+            Ball.GetComponent<GolfBall>().PlayHoleSound();
             ballRigidbody.transform.position = startingPositions[currentHoleNumber].position;
-
             ballRigidbody.velocity = Vector3.zero;
             ballRigidbody.angularVelocity = Vector3.zero;
         }

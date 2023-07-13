@@ -6,6 +6,8 @@ public class GolfBall : MonoBehaviour
 {
     [SerializeField] private AudioSource hitSound;
     [SerializeField] private AudioSource popSound;
+    [SerializeField] private AudioSource winSound;
+    [SerializeField] private AudioSource holeSound;
     [SerializeField] private float flyAmount = 200f;
     [SerializeField] private GameObject confettiParticle;
     [SerializeField] private Vector3 ballPos;
@@ -17,6 +19,16 @@ public class GolfBall : MonoBehaviour
     private void Start()
     {
         
+    }
+
+    public void PlayWinSound()
+    {
+        winSound.Play();
+    }
+
+    public void PlayHoleSound()
+    {
+        holeSound.Play();
     }
 
     public void PlayHitSound()
